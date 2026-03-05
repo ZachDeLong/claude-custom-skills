@@ -1,0 +1,15 @@
+{
+  "name": "custom-skills",
+  "description": "Custom local skills",
+  "owner": {
+    "name": "zachd"
+  },
+  "plugins": [
+    {
+      "name": "advisor",
+      "description": "Skill advisor — recommends which Claude Code skills to use for your project or feature",
+      "version": "1.0.0",
+      "source": "./plugins/advisor/"
+    }
+  ]
+}

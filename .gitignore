@@ -1,0 +1,2 @@
+# Don't ignore .claude-plugin directories (they start with a dot)
+!.claude-plugin/
