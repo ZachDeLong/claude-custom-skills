@@ -22,6 +22,12 @@
       "description": "Project setup — generates CLAUDE.md and recommends plugins based on your repo",
       "version": "1.0.0",
       "source": "./plugins/setup/"
+    },
+    {
+      "name": "pair",
+      "description": "Pair programming — Claude drives, you navigate. One change at a time with approval.",
+      "version": "1.0.0",
+      "source": "./plugins/pair/"
     }
   ]
 }

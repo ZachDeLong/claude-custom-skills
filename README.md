@@ -64,6 +64,18 @@ Project setup — scans your repo and generates a minimal, practical CLAUDE.md. 
 
 Works on new projects (generates from scratch) and existing projects (suggests improvements to existing CLAUDE.md).
 
+### `/pair`
+
+Pair programming — Claude drives, you navigate. Claude proposes one logical change at a time (a function, a component, a schema), shows you the code, and waits for your approval before writing anything.
+
+**The rhythm:**
+1. Claude explains what it's about to do (1 sentence)
+2. Shows the code
+3. You approve, request changes, or reject
+4. If approved, Claude writes it and moves to the next step
+
+Say "faster" for bigger steps, "slower" for more explanation, or "just do it" to let Claude run on a specific change.
+
 ## Install
 
 In Claude Code:
@@ -72,7 +84,7 @@ In Claude Code:
 /plugin → Add Marketplace → zachd/claude-custom-skills
 ```
 
-Then enable the plugins you want (`advisor`, `retro`, `setup`) when prompted.
+Then enable the plugins you want (`advisor`, `retro`, `setup`, `pair`) when prompted.
 
 ## License
 
