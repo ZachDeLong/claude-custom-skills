@@ -3,7 +3,7 @@ name: advisor
 description: "Use when starting a project, planning a feature, or unsure which skills to use. Scans your repo and recommends the right skills for your situation with plain-language explanations."
 metadata:
   author: zachd
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Skill Advisor
@@ -122,7 +122,28 @@ Only include sections that have relevant skills. If nothing fits "Before You Cod
 
 Filter aggressively. If there's no Python in the project, do not recommend python-pro. If the task doesn't involve AI, do not recommend prompt-engineer. Fewer, more relevant recommendations beat a long list.
 
-### Step 6: Add a suggested workflow
+### Step 6: Check skill availability
+
+Before outputting recommendations, check which skills the user actually has installed. The system reminder at the start of every session lists all available skills. Cross-reference your recommendations against that list.
+
+- If a recommended skill IS available — no extra note needed
+- If a recommended skill is NOT available — append a note: *(not installed — available in the [plugin-name] plugin)*
+
+**Plugin mapping for common skills:**
+- `superpowers` plugin: brainstorming, writing-plans, executing-plans, subagent-driven-development, dispatching-parallel-agents, systematic-debugging, verification-before-completion, finishing-a-development-branch, requesting-code-review, receiving-code-review, test-driven-development, using-git-worktrees, common-ground
+- `fullstack-dev-skills` plugin: All framework/language skills (nextjs-developer, react-expert, python-pro, typescript-pro, etc.), architecture-designer, api-designer, the-fool, database-optimizer, etc.
+- `document-skills` plugin: pdf, docx, xlsx, pptx, frontend-design, canvas-design, mcp-builder, skill-creator
+- `code-review` plugin: code-review
+- `commit-commands` plugin: commit, commit-push-pr, clean_gone
+- `code-simplifier` plugin: simplify
+- `claude-md-management` plugin: claude-md-improver, revise-claude-md
+- `feature-dev` plugin: feature-dev
+- `security-guidance` plugin: secure-code-guardian, security-reviewer
+- `playwright` plugin: playwright-expert
+
+If you cannot determine whether a skill is available (e.g. the system reminder doesn't list skills), skip the availability check and recommend normally.
+
+### Step 7: Add a suggested workflow
 
 After the skill categories, add a `### Suggested Workflow` section that orders 4-6 key skills into an actionable sequence. This tells the user "run these in this order."
 
