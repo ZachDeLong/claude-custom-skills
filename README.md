@@ -94,7 +94,7 @@ The next session auto-detects the checkpoint and offers to resume where you left
 In Claude Code:
 
 ```
-/plugin → Add Marketplace → zachd/claude-custom-skills
+/plugin → Add Marketplace → ZachDeLong/claude-dev-workflow
 ```
 
 Then enable the plugins you want (`advisor`, `retro`, `setup`, `pair`, `checkpoint`) when prompted.
