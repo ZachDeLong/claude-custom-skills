@@ -97,6 +97,8 @@ Use this exact template format:
 2. **skill-name** → [short action phrase]
 3. **skill-name** → [short action phrase]
 
+> **To start:** "[natural one-liner the user can paste to kick off the workflow]"
+
 ### Heads Up
 - [Non-skill callout about blind spots — see Heads Up Logic below]
 
@@ -136,6 +138,14 @@ After the skill categories, add a `### Suggested Workflow` section that orders 4
 - **Security audit:** secure-code-guardian → security-reviewer → verification-before-completion → commit
 
 Adapt these to the user's specific situation. The workflow should feel like a step-by-step guide, not a generic template.
+
+**After the workflow, add a copy-paste kickoff line:**
+
+End the Suggested Workflow section with a one-liner the user can paste to start the workflow. Build it from the workflow steps.
+
+Example: `> **To start:** "Use brainstorming to scope this feature, then writing-plans to create the implementation plan, implement with typescript-pro and nextjs-developer, run verification-before-completion before shipping, and commit-push-pr when done."`
+
+Keep it natural — one sentence, not a list. The user should be able to paste it directly into a new session or the current one.
 
 ## Phase 2: Refinement
 
