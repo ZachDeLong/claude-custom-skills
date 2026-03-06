@@ -10,6 +10,12 @@
       "description": "Skill advisor — recommends which Claude Code skills to use for your project or feature",
       "version": "1.2.0",
       "source": "./plugins/advisor/"
+    },
+    {
+      "name": "retro",
+      "description": "Session retrospective — reviews what went well, what didn't, and what to remember",
+      "version": "1.0.0",
+      "source": "./plugins/retro/"
     }
   ]
 }

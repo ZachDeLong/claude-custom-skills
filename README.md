@@ -36,6 +36,20 @@ Stack detected: Next.js 16, TypeScript, Supabase, Vercel, Claude Haiku
 - No tests detected — consider adding coverage for the critique flow
 ```
 
+### `/retro`
+
+Session retrospective — run after finishing work to review what happened. Analyzes the full conversation history and outputs an honest, specific retrospective.
+
+**What it covers:**
+- What was the goal and was it achieved
+- What went well (first-try successes, good decisions)
+- What didn't go well (errors, dead ends, wasted effort)
+- Patterns and learnings worth remembering
+- Skills used and whether they helped
+- What's left to do
+
+Optionally saves key learnings to your CLAUDE.md or memory files.
+
 ## Install
 
 In Claude Code:
@@ -44,7 +58,7 @@ In Claude Code:
 /plugin → Add Marketplace → zachd/claude-custom-skills
 ```
 
-Then enable the `advisor` plugin when prompted.
+Then enable the plugins you want (`advisor`, `retro`) when prompted.
 
 ## License
 
