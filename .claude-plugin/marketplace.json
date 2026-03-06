@@ -8,7 +8,7 @@
     {
       "name": "advisor",
       "description": "Skill advisor — recommends which Claude Code skills to use for your project or feature",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": "./plugins/advisor/"
     }
   ]

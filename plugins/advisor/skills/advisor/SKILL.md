@@ -3,7 +3,7 @@ name: advisor
 description: "Use when starting a project, planning a feature, or unsure which skills to use. Scans your repo and recommends the right skills for your situation with plain-language explanations."
 metadata:
   author: zachd
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Skill Advisor
@@ -92,6 +92,11 @@ Use this exact template format:
 ### Workflow & Shipping
 - **skill-name** — [contextual why]
 
+### Suggested Workflow
+1. **skill-name** → [short action phrase]
+2. **skill-name** → [short action phrase]
+3. **skill-name** → [short action phrase]
+
 ### Heads Up
 - [Non-skill callout about blind spots — see Heads Up Logic below]
 
@@ -114,6 +119,23 @@ Bad: "**secure-code-guardian** — Checks security patterns"
 Only include sections that have relevant skills. If nothing fits "Before You Code" for a straightforward bug fix, skip that section. Every section shown must have at least one recommendation.
 
 Filter aggressively. If there's no Python in the project, do not recommend python-pro. If the task doesn't involve AI, do not recommend prompt-engineer. Fewer, more relevant recommendations beat a long list.
+
+### Step 6: Add a suggested workflow
+
+After the skill categories, add a `### Suggested Workflow` section that orders 4-6 key skills into an actionable sequence. This tells the user "run these in this order."
+
+**Rules:**
+- Pick only the skills that form a natural sequence — not every recommended skill needs to appear
+- Use short action phrases after the arrow: `→ scope the feature` not the full contextual explanation
+- If the task is too simple for a workflow (e.g. one or two skills), skip this section entirely
+
+**Common sequences to recognize and adapt:**
+- **New feature:** brainstorming → writing-plans → [framework skill] → verification-before-completion → commit-push-pr
+- **Bug fix:** systematic-debugging → [framework skill] → test-master → verification-before-completion → commit
+- **Refactor:** architecture-designer → writing-plans → [framework skill] → simplify → requesting-code-review → commit-push-pr
+- **Security audit:** secure-code-guardian → security-reviewer → verification-before-completion → commit
+
+Adapt these to the user's specific situation. The workflow should feel like a step-by-step guide, not a generic template.
 
 ## Phase 2: Refinement
 
