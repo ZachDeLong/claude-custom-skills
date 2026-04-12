@@ -1,5 +1,5 @@
 {
   "name": "advisor",
-  "version": "1.2.0",
-  "description": "Skill advisor — recommends which Claude Code skills to use for your project or feature"
+  "version": "2.0.0",
+  "description": "Skill advisor — sizes your task, recommends framework skills + the right level of process"
 }
